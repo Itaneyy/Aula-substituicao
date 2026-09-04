@@ -1,0 +1,100 @@
+
+O que é uma classe em orientação a objetos?
+R: A classe é como se fosse o molde para o nosso objeto,definindo atributos e comportamentos.
+
+O que é um objeto?
+R: Uma instância da classe, representando algo ou elemento da vida real ou conceitual possuindo identidade,comportamento e estado!.
+
+Qual é a relação entre uma classe e seus objetos?
+R:Classes definem atributos e comportamentos do nosso objeto, e objetos são entidades induvíduais criadas a partir da classe(seu molde).
+Imagine que :
+    A classe é o projeto ou planta baixa; o objeto é a concretização (construção) desse projeto no mundo real.
+
+O que representa o estado de um objeto?
+R: Os dados armazenados em  seus atributos.
+
+O que representa o comportamento de um objeto?
+R: Os métodos definidos em sua classe.
+
+O que é um atributo? 
+R: Um atributo é uma variável que armazena característica ou estado do objeto.
+
+O que é um método? 
+R:função associada a uma classe que define o comportamento ou uma ação que o objeto pode executar.
+
+Qual é a diferença entre atributo e parâmetro de método? 
+R:O atributo pertence ao objeto e persiste em seu estado; o parâmetro é uma variável temporária recebida por um método apenas durante a sua execução.
+
+Qual é a função de um método construtor? 
+R: Inicializar o objeto no momento de sua criação.
+Para que serve a classe ArrayList em Java? 
+R:Para armazenar coleções de dados de tamanho dinâmico.
+
+Explique, de forma sucinta, a finalidade dos métodos abaixo de ArrayList:
+- `add` -> adiciona um elemento.
+
+- `get` -> recupera um dado, (lê um dado).
+
+- `size` -> retorna o tamanho da lista.
+
+- `remove` -> adivinha o que o 'remove' faz...
+    Remove um elemento a partir de um índice ou valor.
+
+- `contains` -> verifica se um determinado valor está na lista.
+
+- `isEmpty` -> verifica se a lista está vazia, retorna TRUE,
+    se for verdade, do contrário retorna FALSE.
+
+- `clear` -> remove todos os elementos e deixa a lista vazia.
+
+- `set` -> substitui o elemento em uma posição específica da lista por um novo valor
+
+O que são modificadores de acesso em Java e qual é a sua principal finalidade?
+R:São palavras-chave(public, private, protected, default)
+    que controlam a visibilidade e o nível de acesso a classes,
+    métodos e atributos, garantindo o encapsulamento.
+
+Explique o modificador de acesso default. Em quais situações um atributo ou método com acesso default pode ser acessado?
+R:É o acesso padrão (quando nenhum modificador é declarado).
+    Ele permite que o elemento seja acessado apenas por classes pertencentes ao mesmo pacote.
+
+Explique o modificador de acesso public. O que significa declarar uma classe, atributo, método ou construtor como public?
+R:Torna o elemento visível e acessível de qualquer lugar, seja no mesmo pacote ou em pacotes diferentes.
+
+Explique o modificador de acesso private. Quem pode acessar diretamente um atributo ou método declarado como private?
+R:Restringe o acesso exclusivamente à própria classe onde o atributo ou método foi declarado.
+
+Qual é a principal diferença entre os modificadores de acesso default, public e private?
+R:O escopo de visibilidade: 
+    public é universal (qualquer lugar),
+    default é restrito ao pacote
+    e private é restrito à própria classe.
+
+O que é um método getter e qual é a sua finalidade?
+R:É um método público usado para obter (ler) o valor de um atributo.
+
+O que é um método setter e qual é a sua finalidade?
+R:É um método público usado para definir ou alterar o valor de um atributo.
+
+Por que getters e setters podem ser utilizados quando os atributos de uma classe são declarados como private?
+R:Porque os atributos privados ficam ocultos do mundo exterior,
+    mas os getters e setters públicos servem como uma "ponte controlada" para interagir com eles.
+
+Qual é a vantagem de utilizar um setter em vez de permitir a alteração direta de um atributo?
+R:O setter permite incluir regras de validação e de negócio ao modificar uma variável,protegendo a integridade dos dados.
+    Imagine uma aplicação que recebe a idade do usuário, poderiamo ultilizar o set para verificar se a idade não é negativa antes de atribuí-la.
+
+Para que serve a declaração package em um arquivo Java?
+R:Para organizar as classes em diretórios lógicos e evitar conflitos de nomes entre classes iguais em projetos diferentes.
+
+Qual é a relação entre um package e a organização das classes de um projeto Java?
+R: O pacote funciona como uma pasta lógica que agrupa classes com responsabilidades ou domínios semelhantes.
+
+Para que serve a declaração import em Java?
+R:Para informar ao compilador onde encontrar classes que estão em pacotes diferentes,
+    permitindo utilizá-las sem precisar digitar o nome totalmente qualificado.
+
+Considere duas classes localizadas em pacotes diferentes. O que precisa ser observado para que uma delas possa utilizar a outra?
+    A classe a ser utilizada precisa estar declarada como 'public' e
+    a classe consumidora deve fazer a importação correta da classe externa através da instrução  'import'.
+

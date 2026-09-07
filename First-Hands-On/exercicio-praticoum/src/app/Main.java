@@ -23,18 +23,21 @@ public class Main {
         System.out.println("Quantidade de músicas:" + playlist.tamanho());
 
         // iterando por cada posição.
-        // Lembrando que configuramos para acessarmos a primeia posição em 1.
-        // Aqui usando o metodo toString
+        // // Lembrando que configuramos para acessarmos a primeia posição em 1.
         for (int i = 1; i <= playlist.tamanho(); i++) {
             System.out.println("==========");
-            System.out.println(playlist.getMusica(i));
+            Musica m = playlist.getMusica(i);
+            m.curtir();
+            m.exibirInformacoes();
         }
 
         // versão alternativa
+        // Aqui usando o metodo toString
         // for (int i = 1; i <= playlist.tamanho(); i++) {
         // System.out.println("==========");
         // Musica m =playlist.getMusica(i);
-        // m.exibirInformacoes();
+        // m.curtir();
+        // System.out.println(m);
         // }
 
         System.out.println("==========");
